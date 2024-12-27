@@ -10,9 +10,9 @@ int read_file(struct Image* image, char* inputFile) {
   FILE* file = fopen(inputFile, "r");
 
   if (file == NULL) {
-		perror("Upsis, failed to open file.");
-		return 1;
-	}
+      perror("Upsis, failed to open file.");
+      return 1;
+  }
 
   int width, height;
 
